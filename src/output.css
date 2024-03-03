@@ -2700,6 +2700,11 @@ html {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FF3434\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 52 52 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/image\/bgbanner\.png\'\)\] {
   background-image: url('../image/bgbanner.png');
 }
