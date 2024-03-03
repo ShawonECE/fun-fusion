@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,95 @@
     <!-- tailwind output css file -->
     <link rel="stylesheet" href="./src/output.css">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
     <title>Welcome to FunFusion forum</title>
+
+    <!-- custom css -->
+    <style>
+        .mulish-font {
+            font-family: "Mulish", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="text-6xl">This is tailwind</h1>
+
+<body class="mulish-font">
+    <!-- header -->
+    <header class="container mx-auto px-4">
+        <!-- navbar section -->
+        <div class="navbar bg-base-100 mt-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <div class="tooltip tooltip-right" data-tip="Home">
+                            <button class="btn btn-circle my-2">
+                                <img src="./images/home.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-right" data-tip="Write">
+                            <button class="btn btn-circle my-2">
+                                <img src="./images/pen.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-right" data-tip="Add">
+                            <button class="btn btn-circle my-2">
+                                <img src="./images/person_add.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-right" data-tip="Flag">
+                            <button class="btn btn-circle my-2">
+                                <img src="./images/flag.png" alt="">
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl font-black">FunFusion</a>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <div class="tooltip" data-tip="Home">
+                            <button class="btn btn-circle mx-2">
+                                <img src="./images/home.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip" data-tip="Write">
+                            <button class="btn btn-circle mx-2">
+                                <img src="./images/pen.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip" data-tip="Add">
+                            <button class="btn btn-circle mx-2">
+                                <img src="./images/person_add.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip" data-tip="Flag">
+                            <button class="btn btn-circle mx-2">
+                                <img src="./images/flag.png" alt="">
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+                <a class="btn rounded-full font-bold bg-[#7A7DFC] text-white">Sign In</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4">
+
+    </main>
 </body>
+
 </html>
