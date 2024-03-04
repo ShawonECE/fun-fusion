@@ -101,8 +101,8 @@
                     <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-5">Welcome to the <span class="text-[#7A7DFC]">FunFusion</span> Forum</h1>
                     <p class="text-lg text-white mb-8">Share your favorite opinion and win a FunFusion coffee mug</p>
                     <label class="input input-bordered flex items-center gap-2 rounded-full pr-[2px] max-w-96">
-                        <input type="text" class="grow" placeholder="Search here anything" />
-                        <span class="badge badge-info rounded-full text-xl p-5 text-white font-medium bg-[#7A7DFC] cursor-pointer">Search</span>
+                        <input id="search-text" type="text" class="grow" placeholder="Search here anything" />
+                        <span id="search-btn" class="badge badge-info rounded-full text-xl p-5 text-white font-medium bg-[#7A7DFC] cursor-pointer">Search</span>
                     </label>
                 </div>
                 <div class="col-span-12 lg:col-span-4">
@@ -112,16 +112,16 @@
                             <p class="text-xl font-medium">01</p>
                         </div>
                         <div class="flex justify-between mb-2">
-                            <p class="text-xl font-medium">Registered Users</p>
-                            <p class="text-xl font-medium">01</p>
+                            <p class="text-xl font-medium">Forum</p>
+                            <p class="text-xl font-medium">05</p>
                         </div>
                         <div class="flex justify-between mb-2">
-                            <p class="text-xl font-medium">Registered Users</p>
-                            <p class="text-xl font-medium">01</p>
+                            <p class="text-xl font-medium">Topics</p>
+                            <p class="text-xl font-medium">10</p>
                         </div>
                         <div class="flex justify-between mb-2">
-                            <p class="text-xl font-medium">Registered Users</p>
-                            <p class="text-xl font-medium">01</p>
+                            <p class="text-xl font-medium">Replies</p>
+                            <p class="text-xl font-medium">95</p>
                         </div>                    
                     </div>
                 </div>
@@ -137,38 +137,12 @@
                 <div id="all-posts" class="col-span-9 lg:col-span-6">
                 </div>
                 <div class="col-span-9 lg:col-span-3 p-5 bg-[#F3F3F5] rounded-2xl">
-                    <div>
+                    <div id="marked-container">
                         <div class="flex justify-between">
                             <p>Title</p>
                             <div class="flex">
                                 <img src="./images/done.png" alt="" class="mr-1">
-                                <p>Mark as read (2)</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-xl mt-2 p-4">
-                            <div class="grid grid-cols-4">
-                                <div class="col-span-3">
-                                    <h3 class="font-semibold">10 Kids Unaware of Their Halloween Costume</h3>
-                                </div>
-                                <div class="col-span-1 flex items-center">
-                                    <div class="flex justify-end">
-                                        <img src="./images/eye.png" alt="" class="mr-2">
-                                        <p>1500</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow-xl mt-2 p-4">
-                            <div class="grid grid-cols-4">
-                                <div class="col-span-3">
-                                    <h3 class="font-semibold">10 Kids Unaware of Their Halloween Costume</h3>
-                                </div>
-                                <div class="col-span-1 flex items-center">
-                                    <div class="flex justify-end">
-                                        <img src="./images/eye.png" alt="" class="mr-2">
-                                        <p>1500</p>
-                                    </div>
-                                </div>
+                                <p>Mark as read (<span id="marked-read">0</span>)</p>
                             </div>
                         </div>
                     </div>
@@ -196,76 +170,7 @@
         <section class="mt-12">
             <h2 class="text-center text-4xl font-black mb-4">Latest Posts</h2>
             <p class="text-center lg:px-28 mb-10">Share and discuss your most bizarre encounter with a stranger—whether it's a cryptic message, an unexpected friendship, or a chance meeting that left you questioning reality</p>
-            <div class="grid grid-cols-3 gap-5">
-                <div class="col-span-3 lg:col-span-1">
-                    <div class="card bg-base-100 shadow-xl p-6">
-                        <figure>
-                            <img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                        </figure>
-                        <div class="card-body p-0 mt-6">
-                            <div class="flex items-center gap-3">
-                                <img src="./images/calendar.png" alt="" class="w-6 h-6">
-                                <p>29 January, 2024</p>
-                            </div>
-                            <h3 class="text-lg font-extrabold">What will a mars habitat force that impact in our daily life!!!</h3>
-                            <p>Yes, you can win exciting prizes and earn special reward by sharing your daily life experiences regularly.</p>
-                            <div class="flex gap-3 mt-4">
-                                <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="" class="rounded-full w-12">
-                                <div>
-                                    <p class="font-bold">Shawon</p>
-                                    <p>Engineer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-3 lg:col-span-1">
-                    <div class="card bg-base-100 shadow-xl p-6">
-                        <figure>
-                            <img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                        </figure>
-                        <div class="card-body p-0 mt-6">
-                            <div class="flex items-center gap-3">
-                                <img src="./images/calendar.png" alt="" class="w-6 h-6">
-                                <p>29 January, 2024</p>
-                            </div>
-                            <h3 class="text-lg font-extrabold">What will a mars habitat force that impact in our daily life!!!</h3>
-                            <p>Yes, you can win exciting prizes and earn special reward by sharing your daily life experiences regularly.</p>
-                            <div class="flex gap-3 mt-4">
-                                <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="" class="rounded-full w-12">
-                                <div>
-                                    <p class="font-bold">Shawon</p>
-                                    <p>Engineer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-3 lg:col-span-1">
-                    <div class="card bg-base-100 shadow-xl p-6">
-                        <figure>
-                            <img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                        </figure>
-                        <div class="card-body p-0 mt-6">
-                            <div class="flex items-center gap-3">
-                                <img src="./images/calendar.png" alt="" class="w-6 h-6">
-                                <p>29 January, 2024</p>
-                            </div>
-                            <h3 class="text-lg font-extrabold">What will a mars habitat force that impact in our daily life!!!</h3>
-                            <p>Yes, you can win exciting prizes and earn special reward by sharing your daily life experiences regularly.</p>
-                            <div class="flex gap-3 mt-4">
-                                <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="" class="rounded-full w-12">
-                                <div>
-                                    <p class="font-bold">Shawon</p>
-                                    <p>Engineer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="grid grid-cols-3 gap-5" id="latest-posts">
             </div>
         </section>
     </main>
@@ -291,6 +196,19 @@
             <br><br><br>
         </div>
     </footer>
+
+    <!-- loading modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex justify-center items-center">
+            <span class="loading loading-spinner loading-lg"></span>
+            <p class="font-bold">Loading</p>
+        </div>
+        <div class="modal-action">
+            <form id="modal-form" method="dialog">
+            </form>
+        </div>
+    </dialog>
 
     <!-- script -->
     <script src="./script.js"></script>
